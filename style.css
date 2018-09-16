@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     font-family: 'Arimo', sans-serif;
+   
 
   }
 
@@ -25,14 +26,27 @@
 
   a {
       text-decoration: none;
+      
   }
 
-.news {
+  a:visited {
+      color: inherit;
+  }
+
+.news, .felicitymain, .rating {
     background-color: #7C909B;
     color: #D4D1C7; 
     height: 40%;
     text-align: left;
     padding: 6rem;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+img {
+    height: 30%;
+    width: 30%;
+    border-radius: 10%;
 }
 
 h2 {
@@ -44,7 +58,7 @@ li {
     font-size: 1.5rem;
 }
 
-.hottestmovies {
+.hottestmovies, .biography, .plot, .reviews {
     background-color: #D4D1C7;
     color: #443A40;
     padding: 4rem;
@@ -53,12 +67,18 @@ li {
     align-items: center;
 }
 
+.biography p, .plot p {
+    font-size: 1.5rem;
+}
+
+
+
  h3 {
     font-size: 3rem;
     padding-top: 1rem;
 }
 
-.hottestactor {
+.hottestactor, .filmography, .cast {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: #733723;
